@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 function Weather(props) {
   const { data, day } = props;
@@ -13,37 +14,47 @@ function Weather(props) {
   ];
 
   return (
-    <>
+    <div>
       <h3>{days[day]}</h3>
-      {data.length === 0 ? (
-        <h4>No data!</h4>
-      ) : (
-        data.map((ele) => {
-          let date = new Date(ele.dt_txt);
-          let icon;
+      <div className="day-container">
+        {data.length === 0 ? (
+          <h4>No data!</h4>
+        ) : (
+          data.map((ele) => {
+            let date = new Date(ele.dt_txt);
+            let icon;
 
-          if (ele.weather[0].main === "Clouds") {
-            icon = "wi-cloud.svg";
-          } else if (ele.weather[0].main === "Rain") {
-            icon = "wi-rain.svg";
-          } else if (ele.weather[0].main === "Clear") {
-            icon = "wi-day-sunny.svg";
-          }
+            if (ele.weather[0].main === "Clouds") {
+              icon = "wi-cloud.svg";
+            } else if (ele.weather[0].main === "Rain") {
+              icon = "wi-rain.svg";
+            } else if (ele.weather[0].main === "Clear") {
+              icon = "wi-day-sunny.svg";
+            }
 
-          return (
-            <div key={data.indexOf(ele)}>
-              Time:{date.getHours()}:{date.getMinutes()}
-              <br />
-              Weather:{ele.weather[0].main}
-              <br />
-              Temperature:{(ele.main.temp - 273.15).toFixed(2)} Celsius
-              <br />
-              <img src={icon} alt="weather" height="100px" width="100px"></img>
-            </div>
-          );
-        })
-      )}
-    </>
+            return (
+              <div className="detail-container">
+                <div key={data.indexOf(ele)}>
+                  <h4>
+                    {date.getHours()}:{date.getMinutes()}
+                  </h4>
+                  <br />
+                  <br />
+                  <img
+                    src={icon}
+                    alt="weather"
+                    height="100px"
+                    width="100px"
+                  ></img>
+                  <br />
+                  <h4> {(ele.main.temp - 273.15).toFixed(2)} ℃</h4>
+                </div>
+              </div>
+            );
+          })
+        )}
+      </div>
+    </div>
   );
 }
 
