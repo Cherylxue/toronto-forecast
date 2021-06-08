@@ -7,7 +7,7 @@ function Forecast() {
   const day = new Date().getDay();
   useEffect(() => {
     fetch(
-      "http://api.openweathermap.org/data/2.5/forecast?q=toronto&appid=083160e8fe8a9deda114381c598392d0"
+      "http://api.openweathermap.org/data/2.5/forecast?q=toronto&appid=f5d1a9b91c10ba912e3f13a885e2a072"
     ).then((res) =>
       res.json().then((res) => {
         setData(res.list);
