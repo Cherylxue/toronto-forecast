@@ -35,9 +35,7 @@ function Weather(props) {
             return (
               <div className="detail-container">
                 <div key={data.indexOf(ele)}>
-                  <h4>
-                    {date.getHours()}:{date.getMinutes()}
-                  </h4>
+                  <h4>{date.getHours()}:00</h4>
                   <br />
                   <br />
                   <img
