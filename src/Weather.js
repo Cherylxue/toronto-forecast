@@ -2,7 +2,15 @@ import React from "react";
 
 function Weather(props) {
   const { data, day } = props;
-  const days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
 
   return (
     <>
