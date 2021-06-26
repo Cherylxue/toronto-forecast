@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/toronto-forecast/static/css/main.26c76a3e.chunk.css",
-    "main.js": "/toronto-forecast/static/js/main.0a2a14f8.chunk.js",
-    "main.js.map": "/toronto-forecast/static/js/main.0a2a14f8.chunk.js.map",
+    "main.js": "/toronto-forecast/static/js/main.ee8b0570.chunk.js",
+    "main.js.map": "/toronto-forecast/static/js/main.ee8b0570.chunk.js.map",
     "runtime-main.js": "/toronto-forecast/static/js/runtime-main.26d4c420.js",
     "runtime-main.js.map": "/toronto-forecast/static/js/runtime-main.26d4c420.js.map",
     "static/js/2.95d2c7bf.chunk.js": "/toronto-forecast/static/js/2.95d2c7bf.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.26d4c420.js",
     "static/js/2.95d2c7bf.chunk.js",
     "static/css/main.26c76a3e.chunk.css",
-    "static/js/main.0a2a14f8.chunk.js"
+    "static/js/main.ee8b0570.chunk.js"
   ]
 }
