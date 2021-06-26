@@ -1,16 +1,18 @@
 .day-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .detail-container {
   display: flex;
-  width: 10%;
-  background-color: antiquewhite;
+  width: 150px;
+  background-color: rgb(255, 251, 238);
   margin: 10px;
   padding: 10px;
   justify-content: center;
   color: black;
+  box-shadow: lightgray 2px 3px 3px 3px;
 }
 
 h4 {
@@ -28,6 +30,6 @@ h4 {
   color: white;
 }
 
-.day-title{
+.day-title {
   text-align: center;
 }
