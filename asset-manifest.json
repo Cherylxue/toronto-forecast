@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cherylxue.github.io/toronto-forecast/static/css/main.26c76a3e.chunk.css",
+    "main.js": "/cherylxue.github.io/toronto-forecast/static/js/main.0a2a14f8.chunk.js",
+    "main.js.map": "/cherylxue.github.io/toronto-forecast/static/js/main.0a2a14f8.chunk.js.map",
+    "runtime-main.js": "/cherylxue.github.io/toronto-forecast/static/js/runtime-main.4493e12c.js",
+    "runtime-main.js.map": "/cherylxue.github.io/toronto-forecast/static/js/runtime-main.4493e12c.js.map",
+    "static/js/2.95d2c7bf.chunk.js": "/cherylxue.github.io/toronto-forecast/static/js/2.95d2c7bf.chunk.js",
+    "static/js/2.95d2c7bf.chunk.js.map": "/cherylxue.github.io/toronto-forecast/static/js/2.95d2c7bf.chunk.js.map",
+    "static/js/3.fcbb44ca.chunk.js": "/cherylxue.github.io/toronto-forecast/static/js/3.fcbb44ca.chunk.js",
+    "static/js/3.fcbb44ca.chunk.js.map": "/cherylxue.github.io/toronto-forecast/static/js/3.fcbb44ca.chunk.js.map",
+    "index.html": "/cherylxue.github.io/toronto-forecast/index.html",
+    "static/css/main.26c76a3e.chunk.css.map": "/cherylxue.github.io/toronto-forecast/static/css/main.26c76a3e.chunk.css.map",
+    "static/js/2.95d2c7bf.chunk.js.LICENSE.txt": "/cherylxue.github.io/toronto-forecast/static/js/2.95d2c7bf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4493e12c.js",
+    "static/js/2.95d2c7bf.chunk.js",
+    "static/css/main.26c76a3e.chunk.css",
+    "static/js/main.0a2a14f8.chunk.js"
+  ]
+}
