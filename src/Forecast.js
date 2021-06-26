@@ -7,7 +7,7 @@ function Forecast() {
   const day = new Date().getDay();
   useEffect(() => {
     fetch(
-      "http://api.openweathermap.org/data/2.5/forecast?q=toronto&appid=f5d1a9b91c10ba912e3f13a885e2a072"
+      "https://api.openweathermap.org/data/2.5/forecast?q=toronto&appid=f5d1a9b91c10ba912e3f13a885e2a072"
     ).then((res) =>
       res.json().then((res) => {
         setData(res.list);
@@ -15,7 +15,6 @@ function Forecast() {
     );
   }, []);
 
-  
   return (
     <>
       <div className="day-one">
@@ -32,7 +31,7 @@ function Forecast() {
           data={data.filter(
             (element) => new Date(element.dt_txt).getDate() === today + 1
           )}
-          day={(day + 1)%7}
+          day={(day + 1) % 7}
         />
       </div>
       <div className="day-three">
@@ -40,7 +39,7 @@ function Forecast() {
           data={data.filter(
             (element) => new Date(element.dt_txt).getDate() === today + 2
           )}
-          day={(day + 2)%7}
+          day={(day + 2) % 7}
         />
       </div>
       <div className="day-four">
@@ -48,7 +47,7 @@ function Forecast() {
           data={data.filter(
             (element) => new Date(element.dt_txt).getDate() === today + 3
           )}
-          day={(day + 3)%7}
+          day={(day + 3) % 7}
         />
       </div>
       <div className="day-five">
@@ -56,7 +55,7 @@ function Forecast() {
           data={data.filter(
             (element) => new Date(element.dt_txt).getDate() === today + 4
           )}
-          day={(day + 4)%7}
+          day={(day + 4) % 7}
         />
       </div>
     </>
