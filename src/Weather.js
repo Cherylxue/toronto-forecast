@@ -15,7 +15,7 @@ function Weather(props) {
 
   return (
     <div>
-      <h3>{days[day]}</h3>
+      <h3 className="day-title">{days[day]}</h3>
       <div className="day-container">
         {data.length === 0 ? (
           <h4>No data!</h4>
@@ -36,8 +36,6 @@ function Weather(props) {
               <div className="detail-container">
                 <div key={data.indexOf(ele)}>
                   <h4>{date.getHours()}:00</h4>
-                  <br />
-                  <br />
                   <img
                     src={icon}
                     alt="weather"

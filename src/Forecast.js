@@ -15,6 +15,7 @@ function Forecast() {
     );
   }, []);
 
+  
   return (
     <>
       <div className="day-one">
@@ -31,7 +32,7 @@ function Forecast() {
           data={data.filter(
             (element) => new Date(element.dt_txt).getDate() === today + 1
           )}
-          day={day + 1}
+          day={(day + 1)%7}
         />
       </div>
       <div className="day-three">
@@ -39,7 +40,7 @@ function Forecast() {
           data={data.filter(
             (element) => new Date(element.dt_txt).getDate() === today + 2
           )}
-          day={day + 2}
+          day={(day + 2)%7}
         />
       </div>
       <div className="day-four">
@@ -47,7 +48,7 @@ function Forecast() {
           data={data.filter(
             (element) => new Date(element.dt_txt).getDate() === today + 3
           )}
-          day={day + 3}
+          day={(day + 3)%7}
         />
       </div>
       <div className="day-five">
@@ -55,7 +56,7 @@ function Forecast() {
           data={data.filter(
             (element) => new Date(element.dt_txt).getDate() === today + 4
           )}
-          day={day + 4}
+          day={(day + 4)%7}
         />
       </div>
     </>
